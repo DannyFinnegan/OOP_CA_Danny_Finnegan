@@ -4,13 +4,15 @@
 
 package Assessment;
 
+import java.util.Arrays;
+
 public class Country {
 
     private String Name;
     private String Capital;
     private int Population;
     private int Area;
-    //private String[] Cities;
+    private String[] Cities;
     private String Currency;
     private String Language;
 
@@ -40,9 +42,9 @@ public class Country {
         return Area;
     }
 
-    /*public String[] getCities() {
+    public String[] getCities() {
         return Cities;
-    }*/
+    }
 
     public String getCurrency() {
         return Currency;
@@ -67,18 +69,18 @@ public class Country {
         }
         else
         {
-
+            Population = population;
         }
-        Population = population;
+
     }
 
     public void setArea(int area) {
         Area = area;
     }
 
-   /* public void setCities(String[] cities) {
+    public void setCities(String[] cities) {
         Cities = cities;
-    }*/
+    }
 
     public void setCurrency(String currency) {
         Currency = currency;
@@ -93,7 +95,7 @@ public class Country {
                 "\nCapital: " + Capital +
                 "\nPopulation: " + Population +
                 "\nArea: " + Area +
-                "\nCities: " + //Arrays.toString(Cities) +
+                "\nCities: " + Arrays.toString(Cities) +
                 "\nCurrency: " + Currency +
                 "\nLanguage: " + Language;
     }
